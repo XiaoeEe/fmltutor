@@ -1,5 +1,6 @@
 package com.github.ustc_zzzz.fmltutor.client;
 
+import com.github.ustc_zzzz.fmltutor.client.fluid.FluidRenderLoader;
 import com.github.ustc_zzzz.fmltutor.common.CommonProxy;
 
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -12,6 +13,7 @@ public class ClientProxy extends CommonProxy
     public void preInit(FMLPreInitializationEvent event)
     {
         super.preInit(event);
+        new FluidRenderLoader();
     }
 
     @Override
