@@ -32,6 +32,8 @@ public class ItemLoader
     public static ItemArmor redstoneLeggings = new ItemRedstoneArmor.Leggings();
     public static ItemArmor redstoneBoots = new ItemRedstoneArmor.Boots();
 
+    public static Item bucketMercury = new ItemBucketMercury();
+
     public ItemLoader(FMLPreInitializationEvent event)
     {
         register(goldenEgg, "golden_egg");
@@ -42,6 +44,8 @@ public class ItemLoader
         register(redstoneChestplate, "redstone_chestplate");
         register(redstoneLeggings, "redstone_leggings");
         register(redstoneBoots, "redstone_boots");
+
+        register(bucketMercury, "bucket_mercury");
     }
 
     @SideOnly(Side.CLIENT)
@@ -55,6 +59,8 @@ public class ItemLoader
         registerRender(redstoneChestplate);
         registerRender(redstoneLeggings);
         registerRender(redstoneBoots);
+
+        registerRender(bucketMercury);
     }
 
     private static void register(Item item, String name)
