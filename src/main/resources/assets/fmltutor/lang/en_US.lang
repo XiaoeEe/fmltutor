@@ -37,3 +37,5 @@ commands.position.usage=/position [player]
 commands.position.success=The position of %1$s is [ %2$s, %3$s, %4$s ] in world %5$s
 
 fluid.mercury=Mercury
+
+entity.GoldenChicken.name=Golden Chicken
