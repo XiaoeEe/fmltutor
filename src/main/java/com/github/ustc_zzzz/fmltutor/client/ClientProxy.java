@@ -1,5 +1,6 @@
 package com.github.ustc_zzzz.fmltutor.client;
 
+import com.github.ustc_zzzz.fmltutor.client.entity.EntityRenderLoader;
 import com.github.ustc_zzzz.fmltutor.client.fluid.FluidRenderLoader;
 import com.github.ustc_zzzz.fmltutor.common.CommonProxy;
 
@@ -21,6 +22,7 @@ public class ClientProxy extends CommonProxy
     {
         super.init(event);
         new ItemRenderLoader();
+        new EntityRenderLoader();
         new KeyLoader();
     }
 
